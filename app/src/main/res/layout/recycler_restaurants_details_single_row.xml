@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="120dp"
+     android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <TextView
+            android:id="@+id/txtNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="1"
+            android:textSize="18sp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.7">
+
+            <TextView
+                android:id="@+id/txtDishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dish name"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:padding="6dp"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.100"
+                android:layout_below="@+id/txtDishName"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:padding="6dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:gravity="center"
+            android:layout_weight="1.8"
+            android:layout_marginEnd="10dp"
+            android:padding="6dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
